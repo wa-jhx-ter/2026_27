@@ -1,0 +1,6 @@
+# Question 1
+
+1. H=0 is a straight line and H=1 is a sigmoid curve. Both networks have insufficient capacity and produce relatively large training errors. Underfitting
+2. H=20 is more fitting to points but more fluctuations between 0 and 1, which may caused by the random noise. Compared by the curve H=5, although the model has a lower training loss, it may make less accurate predictions for unseen values. This is overfitting.
+3. A larger network can reproduce any function represented by a smaller network. It can use some of its hidden units in the same way as the smaller network and make the additional units inactive, for example by setting their output weights to zero. Therefore, the larger network can achieve at least the same training loss as the smaller network. Its additional hidden units may allow it to fit the training data more closely and achieve an even lower loss.
+4. No. Training loss usually favours larger networks because they can fit the training data, including its random noise, more closely. A low training loss does not guarantee good performance on unseen data. Therefore, a validation set is required to choose H.
